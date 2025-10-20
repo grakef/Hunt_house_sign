@@ -18,14 +18,14 @@
     {
       "atomType": "Text",
       "name": "Text",
-      "x": 0.4124245038826575,
-      "y": 0.3876221498371335,
+      "x": 0.3994823123382226,
+      "y": 0.13029315960912052,
       "uniqueID": "c70a9b2c-5e26-46f2-b605-b3d8c344bf79",
       "ioValues": [
         {
           "name": "Font Size",
-          "ioValue": 100,
-          "currentEquation": "100"
+          "ioValue": 75,
+          "currentEquation": "75"
         },
         {
           "name": "Text",
@@ -38,8 +38,8 @@
     {
       "atomType": "Extrude",
       "name": "Extrude",
-      "x": 0.5263157894736842,
-      "y": 0.4527687296416938,
+      "x": 0.48921484037963764,
+      "y": 0.11726384364820845,
       "uniqueID": "703394e6-14e1-4c05-b31b-04e0cfcc5c99",
       "ioValues": [
         {
@@ -100,16 +100,61 @@
       ]
     },
     {
+      "atomType": "Move",
+      "name": "Move",
+      "x": 0.5875754961173426,
+      "y": 0.6840390879478828,
+      "uniqueID": "c329a670-a450-4497-85be-93d1479f6e68",
+      "ioValues": [
+        {
+          "name": "xDist",
+          "ioValue": 200,
+          "currentEquation": "200"
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "name": "Move",
+      "x": 0.5936151855047455,
+      "y": 0.10097719869706841,
+      "uniqueID": "afa44f2d-93c4-4cc0-930e-4d6b888b6dd7",
+      "ioValues": [
+        {
+          "name": "xDist",
+          "ioValue": 98,
+          "currentEquation": "98"
+        },
+        {
+          "name": "yDist",
+          "ioValue": 50,
+          "currentEquation": "50"
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
       "atomType": "Assembly",
       "name": "Assembly",
-      "x": 0.812769628990509,
-      "y": 0.6807817589576547,
-      "uniqueID": "a5a91d34-a257-4d7b-acf2-8b327b035926",
+      "x": 0.8662640207075064,
+      "y": 0.39087947882736157,
+      "uniqueID": "546cb93a-517a-4bcf-a852-9c68e78e15f7",
       "ioValues": [
         {
           "name": "Shape 1",
           "ioValue": {
-            "geometry": "extrude-text-HUNT-{\"startX\":0,\"startY\":0,\"fontSize\":100,\"font\":\"ANTON\"}-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-8",
+            "geometry": "move-extrude-text-HUNT-{\"startX\":0,\"startY\":0,\"fontSize\":75,\"font\":\"ANTON\"}-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-8-98-50-0",
             "dimension": "3D",
             "tags": [],
             "plane": {
@@ -136,7 +181,7 @@
         {
           "name": "Shape 2",
           "ioValue": {
-            "geometry": "extrude-cut-circle-200-circle-197-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-18",
+            "geometry": "move-extrude-cut-circle-200-circle-197-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-18-200-0-0",
             "dimension": "3D",
             "tags": [],
             "plane": {
@@ -163,39 +208,23 @@
       ]
     },
     {
-      "atomType": "Extrude",
-      "name": "Extrude",
-      "x": 0.4106125970664366,
-      "y": 0.5407166123778502,
-      "uniqueID": "fa961c77-7225-443f-96f9-fdf4c9baafdd",
+      "atomType": "Text",
+      "name": "Text",
+      "x": 0.46764452113891286,
+      "y": 0.3159609120521173,
+      "uniqueID": "5f1621a6-ae2c-4f66-907a-62dbf4031fd4",
       "ioValues": [
         {
-          "name": "height",
+          "name": "Font Size",
           "ioValue": 10
-        }
-      ]
-    },
-    {
-      "atomType": "Move",
-      "name": "Move",
-      "x": 0.5106125970664366,
-      "y": 0.5407166123778502,
-      "uniqueID": "327ab478-4df8-4bfb-8420-818ad4706438",
-      "ioValues": [
-        {
-          "name": "xDist",
-          "ioValue": 200,
-          "currentEquation": "200"
         },
         {
-          "name": "yDist",
-          "ioValue": 0
-        },
-        {
-          "name": "zDist",
-          "ioValue": 0
+          "name": "Text",
+          "ioValue": "Lorem Ipsum"
         }
-      ]
+      ],
+      "fontFamily": "ROBOTO",
+      "selectedFontIndex": 0
     }
   ],
   "allConnectors": [
@@ -207,21 +236,15 @@
     },
     {
       "ap1Name": "geometry",
-      "ap2Name": "Shape 1",
+      "ap2Name": "geometry",
       "ap1ID": "703394e6-14e1-4c05-b31b-04e0cfcc5c99",
-      "ap2ID": "a5a91d34-a257-4d7b-acf2-8b327b035926"
+      "ap2ID": "afa44f2d-93c4-4cc0-930e-4d6b888b6dd7"
     },
     {
       "ap1Name": "geometry",
       "ap2Name": "geometry1",
       "ap1ID": "b6aa948e-9723-45e3-a64d-d35ec20916bb",
       "ap2ID": "5e5e3368-a295-44ae-8f2f-41bf6c2fc253"
-    },
-    {
-      "ap1Name": "geometry",
-      "ap2Name": "geometry",
-      "ap1ID": "b6aa948e-9723-45e3-a64d-d35ec20916bb",
-      "ap2ID": "fa961c77-7225-443f-96f9-fdf4c9baafdd"
     },
     {
       "ap1Name": "geometry",
@@ -237,21 +260,27 @@
     },
     {
       "ap1Name": "geometry",
-      "ap2Name": "Shape 2",
+      "ap2Name": "geometry",
       "ap1ID": "148fa4f3-2559-417e-a459-d276c75b1a7f",
-      "ap2ID": "a5a91d34-a257-4d7b-acf2-8b327b035926"
+      "ap2ID": "c329a670-a450-4497-85be-93d1479f6e68"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "Shape 2",
+      "ap1ID": "c329a670-a450-4497-85be-93d1479f6e68",
+      "ap2ID": "546cb93a-517a-4bcf-a852-9c68e78e15f7"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "Shape 1",
+      "ap1ID": "afa44f2d-93c4-4cc0-930e-4d6b888b6dd7",
+      "ap2ID": "546cb93a-517a-4bcf-a852-9c68e78e15f7"
     },
     {
       "ap1Name": "geometry",
       "ap2Name": "number or geometry",
-      "ap1ID": "a5a91d34-a257-4d7b-acf2-8b327b035926",
+      "ap1ID": "546cb93a-517a-4bcf-a852-9c68e78e15f7",
       "ap2ID": "deaa6af6-33aa-42c7-ba95-92e828d02067"
-    },
-    {
-      "ap1Name": "geometry",
-      "ap2Name": "geometry",
-      "ap1ID": "fa961c77-7225-443f-96f9-fdf4c9baafdd",
-      "ap2ID": "327ab478-4df8-4bfb-8420-818ad4706438"
     }
   ],
   "unitsKey": "MM",
