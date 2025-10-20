@@ -1,0 +1,15 @@
+{
+    "atomType": "Molecule",
+    "name": "Hunt_house_sign",
+    "x": 0,
+    "y": 0,
+    "uniqueID": "d49b40af-20cb-458e-bcfa-2be7098c2070",
+    "ioValues": [],
+    "topLevel": true,
+    "allAtoms": [],
+    "allConnectors": [],
+    "unitsKey": "MM",
+    "fileTypeVersion": 1,
+    "compiledBom": {},
+    "filetypeVersion": 1
+}
